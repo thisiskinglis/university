@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graduation 2026 | University of Cape Town</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white font-[Open_Sans]">
+<header class="bg-[#001F3A] text-white h- flex items-center px-6 sticky top-0 z-50">
+  <div class="flex items-center gap-3">
+    <div class="w-8 h-10 bg-white rounded-sm flex items-center justify-center text-[#001F3A] font-bold">◍</div>
+    <div class="leading-tight">
+      <div class="font-bold tracking-widest text-">UNIVERSITY OF CAPE TOWN</div>
+      <div class="text- opacity-80">IYUNIVESITHI YASEKAPA • UNIVERSITEIT VAN KAAPSTAD</div>
+    </div>
+  </div>
+</header>
+<nav class="bg-white border-b h- flex items-center justify-end px-2 text-">
+  <a class="bg-[#0096D6] text-white px-4 py- font-semibold">Spring 2026 Graduation ∧</a>
+  <a class="px-3 py-2">Careers ↗</a><a class="px-3 py-2">Student affairs ↗</a>
+  <a class="px-3 py-2">Libraries ↗</a><a class="px-3 py-2">ICTS ↗</a>
+  <a class="px-3 py-2">Campus communications ↗</a><a class="px-3 py-2">Calendar ∧</a>
+  <a class="px-3 py-2">Noticeboard ∧</a>
+</nav>
+<section class="relative bg-white overflow-hidden h- flex items-center border-b">
+  <h1 class="text- font-light ml-[10%] z-10">Applicants & Students</h1>
+  <div class="absolute right-0 top-0 h-full w-[45%] flex">
+    <div class="absolute right-[55%] top-0 w- h-full bg-[#B24B68] -skew-x- border-l- border-black"></div>
+    <div class="absolute right-[35%] top-0 w- h-full bg-white -skew-x- border-l- border-r- border-black"></div>
+    <div class="absolute right-0 top-0 w-[60%] h-full bg-[#1E4A8A] -skew-x-"></div>
+  </div>
+</section>
+<div class="flex max-w- mx-auto">
+  <aside class="w- bg-white border-r min-h-screen hidden lg:block">
+    <nav class="py-4 text-">
+      <a class="block px-6 py-3 hover:bg-gray-50">Home</a>
+      <a class="block px-6 py-3 bg-[#F0F7FF] border-l-4 border-[#001F3A] font-semibold">Current students</a>
+      <a class="block pl-10 pr-6 py-2 text- text-gray-600">Online resources</a>
+    </nav>
+  </aside>
+  <main class="flex-1">
+    <div class="relative h- bg-[#111] overflow-hidden">
+      <img id="heroImg" src="https://images.unsplash.com/photo-1627556704302-624286467c65?q=80&w=2000" class="absolute inset-0 w-full h-full object-cover opacity-80">
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
+      <div class="relative z-10 p-12 h-full flex flex-col justify-center">
+        <div class="flex gap-2 text-white/80 text- mb-4"><span>Home › Current students › Graduation</span></div>
+        <div class="border-l-4 border-[#0096D6] pl-5">
+          <h2 class="text-white text- font-bold">Graduation 2026</h2>
+          <p class="text-white/90 mt-2">Autumn 2026 graduation ceremonies</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-8">
+      <div class="flex justify-between items-center mb-6">
+        <h3 id="seasonTitle" class="text- font-bold">Autumn 2026</h3>
+        <div class="flex gap-2">
+          <select id="facultyFilter" class="border rounded px-3 py-2 text-"><option value="all">All Faculties</option><option>Commerce</option><option>Humanities</option><option>Law</option><option>Health Sciences</option></select>
+          <input id="searchInput" placeholder="Search..." class="border rounded px-3 py-2 text- w-">
+        </div>
+      </div>
+      <div class="flex gap-1 mb-6 border-b overflow-x-auto">
+        <button data-year="2026-autumn" class="year-tab active bg-[#001F3A] text-white px-4 py-2 text- rounded-t">Autumn 2026</button>
+        <button data-year="2026-spring" class="year-tab px-4 py-2 text-">Spring 2026</button>
+        <button data-year="2025-autumn" class="year-tab px-4 py-2 text-">Autumn 2025</button>
+        <button data-year="2024" class="year-tab px-4 py-2 text-">2024 Archive</button>
+        <button data-year="2023" class="year-tab px-4 py-2 text-">2023 Archive</button>
+      </div>
+      <div class="border rounded overflow-hidden"><div id="scheduleList"></div></div>
+      <h4 class="mt-12 text- font-bold mb-4">Past Graduation Archives</h4>
+      <div id="archiveGrid" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+    </div>
+  </main>
+</div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
